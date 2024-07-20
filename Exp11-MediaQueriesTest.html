@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Media Queries</title>
+        <style>
+            /*hsl : hue,saturation,lightness*/
+            .container{
+                margin: 0 auto;
+                background: hsl(173, 94%, 37%);
+                box-sizing: border-box;
+            }
+            /*Smartphones (portrait and landscape)*/
+            @media screen and (min-width: 767px) {
+                .container{
+                    width: 100px;
+                    padding: 3px 6px;
+                }
+            }
+            /*Tablets,iPads(portrait and landscape)*/
+            @media screen and (min-width:768px) and (max-width:1024px){
+                .container{
+                    width: 750px;
+                    padding: 3px 6px;
+                }
+            }
+            /*Low resolution Desktops and Laptops*/
+            @media screen and (min-width:1024px){
+                .container{
+                    width: 1000px;
+                    padding: 3px 7px;
+                }
+            }
+            /*High resolution desktops and Laptops*/
+            @media screen and (min-width:1280px){
+                .container{
+                    width: 1200px;
+                    padding: 3px 7px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p>
+                Paragraphs are the building blocks of papers. Many students define 
+            paragraphs in terms of length: a paragraph is a group of at least 
+            five sentences, a paragraph is half a page long, etc. In reality, 
+            though, the unity and coherence of ideas among sentences is what 
+            constitutes a paragraph.Paragraphs are the building blocks of papers. 
+            Many students define paragraphs in terms of length: at least 
+             a paragraph is a group of at least half a page long
+            five sentences, a paragraph is half a page long, etc. In reality, 
+            though, the unity and coherence of ideas among sentences is what 
+            constitutes a paragraph.
+            </p>
+        </div>
+    </body>
+</html>

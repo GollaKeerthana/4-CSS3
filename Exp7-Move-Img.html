@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>CSS3 Animation</title>
+        <style>
+            .anim{
+                margin: 60px;
+                width: 260px;
+                height: 270px;
+                background: url(panda.jpg)no-repeat;
+                position: relative;
+                animation: repeatit 3s linear 0s infinite alternate;
+            }
+            @keyframes repeatit {
+                from{left: 0%;}
+                to{left:  100%;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="anim"></div>
+    </body>
+</html>
